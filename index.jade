@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+        link(href="./index.css" rel="stylesheet")
+        link(href="/modules/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet")
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet")
+    body
+        header
+            .container
+                a(href="#").logo H.
+                nav
+                    - var navi = ["Home", "About Us", "Services", "Portofolio", "Contact", "Blog"]
+                        each item in navi
+                            a(href="#" class=`${item.toLowerCase()}`)= item
+        main
+            section.hero
+                .container
+                    .hero-text-container
+                        h1.title Saya Hapdesmith
+                        p.description Saya adalah gamer dan programmer
+                        a(href="#").btn.btn-primary Hire Me
+                    .hero-image
+                        img(src="/images/hero_img.png" alt="hapdmesith hero image")
+            section.about
+                .container
+                    h2.section-title.left About Me
+                    .section-body
+                        .description
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.
+                        a(href="#").btn.btn-medium.btn-primary View Works
+                        a(href="#").btn.btn-medium.btn-o-primary Download CV
+
+                    
+        
+
