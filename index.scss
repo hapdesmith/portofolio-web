@@ -1,10 +1,29 @@
+// theme color
 $main-color: #fbd214;
+$sub-color: #feb633;
+
+// font color
 $main-font-color: #32333c;
 $secondary-font-color: #666;
 $body-font-color: #8a8fa3;
-$sub-color: #feb633;
+
+// bg color
 $bg-section: #fbfbfb;
 $bg-header: #fff;
+
+// mixins
+@mixin gradient($from, $to) {
+  // fallback
+  background-color: $from;
+  // firefox
+  background-image: -moz-linear-gradient($from, $to);
+  // Safari 4+, Chrome 1+ 
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+  // Safari 5.1+, Chrome 10+
+  background-image: -webkit-linear-gradient($from, $to);
+  // Opera 11.10+
+  background-image: -o-linear-gradient($from, $to);
+}
 
 html, body {
     padding: 0;
@@ -223,5 +242,7 @@ main {
                 }
             }
         }
+
+
     }
 }
