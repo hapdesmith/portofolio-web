@@ -31,7 +31,55 @@ html
                             p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.
                         a(href="#").btn.btn-medium.btn-primary View Works
                         a(href="#").btn.btn-medium.btn-o-primary Download CV
-            
+            section.services
+                .container
+                    h2.section-title Services
+                    .section-body
+                        .description
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        .box-container
+                            mixin boxStyle(color, icon, title)
+                                .box(class=`box-${color}`)
+                                    .text-container
+                                        i.fa(class=`fa-${icon}`)
+                                        .title=title
+                                        .box-description
+                                            block
+                            +boxStyle('blue', 'mobile', 'UX RESEARCH')
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit 1
+                            +boxStyle('yellow', 'file-code-o', 'WEB DEVELOPMENT')
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit 2
+                            +boxStyle('red', 'mobile', 'APP DESIGN')
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit 3
+                            +boxStyle('green', 'file-code-o', 'WEB DESIGN')
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit 4
+            section.works
+                .container
+                    h2.section-title Latest Work
+                    .section-body
+                        .description
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        .filter-box
+                            a(href="#" data-filter="*") All
+                            a(href="#" data-filter=".uix") UI / UX
+                            a(href="#" data-filter=".fe") Frontend Dev
+                            a(href="#" data-filter=".ph") Photography
+
+                        mixin gridStyle(imageName, workType, sizeType = '')
+                            .grid-item(class=`${workType.join(" ")} ${sizeType}`)
+                                .item
+                                    img(src=`../images/${imageName}.jpg`)
+
+                        .grid
+                            .grid-sizer
+                            +gridStyle('work-a', ['uix', 'fe'], 'grid-big')
+                            +gridStyle('work-c', ['uix', 'ph'])
+                            +gridStyle('work-d', ['uix', 'fe', 'ph'])
+                            +gridStyle('work-e', ['fe'])
+                            +gridStyle('work-f', ['uix'])
+                            +gridStyle('work-g', ['uix'])
+                            +gridStyle('work-h', ['ph', 'fe'])
+                            +gridStyle('work-b', ['ph'], 'grid-big-h')
     script(src="../modules/jquery.min.js")
     script(src="../modules/isotope.pkgd.min.js")
     script(src="../main.js")

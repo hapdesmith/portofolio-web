@@ -6,6 +6,10 @@ html, body {
   font-size: 10px;
 }
 
+div, section {
+  box-sizing: border-box !important;
+}
+
 .container {
   width: 1200px;
   margin: auto;
@@ -61,6 +65,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
   box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.2);
@@ -126,6 +131,12 @@ main section .section-title::before {
 main section .section-title.left::before {
   left: 0;
 }
+main section .section-body .description p {
+  color: #8a8fa3;
+}
+main section .section-body .description p + p {
+  margin: 30px 0 0 0;
+}
 main section.hero {
   background: #fbfbfb;
   margin-top: 88px;
@@ -178,9 +189,153 @@ main section.about .section-body {
 main section.about .section-body .description {
   margin: 0 0 30px 0;
 }
-main section.about .section-body .description p {
-  color: #8a8fa3;
+main section.services {
+  padding: 115px 0 130px;
+  background: #fbfbfb;
 }
-main section.about .section-body .description p + p {
-  margin: 30px 0 0 0;
+main section.services .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.services .section-title {
+  margin: 0 auto 35px;
+}
+main section.services .section-body .description {
+  width: 60%;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+main section.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.services .box-container .box {
+  border-radius: 10px;
+  width: calc(50% - 15px);
+  background: url("../images/service-3.jpg");
+  background-size: 100% auto;
+  position: relative;
+  padding: 60px 80px;
+  color: white;
+}
+main section.services .box-container .box::before {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: -webkit-linear-gradient(-48deg, #24e2fe 0%, #24b0fe 54%, #237efd 100%);
+  opacity: 0.5;
+}
+main section.services .box-container .box .text-container {
+  position: relative;
+  z-index: 2;
+}
+main section.services .box-container .box.box-yellow::before {
+  background-image: -webkit-linear-gradient(-48deg, #ffd324 0%, rgba(254, 187, 36, 0.99) 54%, rgba(253, 163, 35, 0.99) 100%);
+}
+main section.services .box-container .box.box-red {
+  background-image: url("../images/service-4.jpg");
+}
+main section.services .box-container .box.box-red::before {
+  background-image: -webkit-linear-gradient(-48deg, rgba(248, 47, 160, 0.99) 0%, rgba(214, 54, 208, 0.99) 54%, rgba(180, 61, 255, 0.99) 100%);
+}
+main section.services .box-container .box.box-green::before {
+  background-image: -webkit-linear-gradient(-48deg, rgba(0, 188, 128, 0.99) 0%, rgba(2, 204, 71, 0.99) 54%, rgba(3, 220, 13, 0.99) 100%);
+}
+main section.services .box-container .box:nth-child(n+3) {
+  margin-top: 30px;
+}
+main section.services .box-container .box:nth-child(2n) {
+  margin-left: 30px;
+}
+main section.services .box-container .box .fa {
+  font-size: 8rem;
+  margin: 0 0 10px;
+}
+main section.services .box-container .box .title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  margin: 0 0 15px;
+}
+main section.works {
+  padding: 120px 0 80px;
+  background: white;
+}
+main section.works .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.works .section-title {
+  margin: 0 auto 35px;
+}
+main section.works .section-body .description {
+  width: 60%;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+main section.works .filter-box {
+  margin: 0 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.works .filter-box a {
+  color: #32333c;
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin: 0 0 0 42px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+main section.works .filter-box a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #feb633;
+  transition: all 0.3s ease;
+}
+main section.works .filter-box a:hover, main section.works .filter-box a.is-selected {
+  color: #feb633;
+}
+main section.works .filter-box a.is-selected::before {
+  width: 100%;
+}
+main section.works .grid {
+  width: 100%;
+}
+main section.works .grid-item, main section.works .grid-sizer {
+  width: 25%;
+}
+main section.works .grid-item {
+  margin-bottom: 30px;
+}
+main section.works .grid-item .item {
+  width: calc(100% - 30px);
+  margin: 0 15px;
+  height: 275px;
+}
+main section.works .grid-big {
+  width: 50%;
+}
+main section.works .grid-big .item {
+  width: calc(100% - 30px);
+  margin: 0 15px;
+  height: 580px;
+}
+main section.works .grid-big-h {
+  width: 50%;
+}
+main section.works .grid-big-h .item {
+  width: calc(100% - 30px);
+  margin: 0 15px;
+  height: 275px;
 }
