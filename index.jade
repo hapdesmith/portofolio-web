@@ -85,6 +85,79 @@ html
                             +gridStyle('judul work g','work-g', ['uix'])
                             +gridStyle('judul work h','work-h', ['ph', 'fe'])
                             +gridStyle('judul work i','work-b', ['ph'], 'grid-big-h')
+            section.experiences
+                .container
+                    h2.section-title Work Experiences
+                    .section-body
+                        .description
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        .exp-box-container
+                            mixin expBoxStyle(date, jobTitle, company)
+                                a(href="#").exp-box
+                                    .date=date
+                                    .job-title=jobTitle
+                                    .company=company
+                                    .job-desc
+                                        block
+                            +expBoxStyle('June 2019 - Des 2019', 'UI/UX Designer', 'Google')
+                                p Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore.
+                            +expBoxStyle('Jan 2020 - June 2020', 'UI/UX Designer', 'Youtube')
+                                p Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore.
+                            +expBoxStyle('July 2020 - Des 2020', 'UI/UX Designer', 'Facebook')
+                                p Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore.
+            section.call-to-action
+                .container
+                    h2.section-title Have Any Project in Mind ?
+                    a(href="#").btn.btn-o-primary Hire Me
+            section.contact
+                .container
+                    h2.section-title Contact Me
+                    .section-body
+                        .contact-info
+                            .info-title Contact Info
+                            .info
+                                i.fa.fa-map-marker
+                                span Los Angeles, Belok kanan dikit
+                            .info
+                                i.fa.fa-envelope
+                                span emailku@hapdesmith.com
+                            .info
+                                i.fa.fa-phone
+                                span 
+                                    | +081232323 <br/>
+                                    | +081232323
+                            .info
+                                i.fa.fa-globe
+                                span www.hapdesmith.com
+                            .info-title Follow Me
+                            .social-media
+                                a(href="#")
+                                    i.fa.fa-facebook
+                                a(href="#")
+                                    i.fa.fa-twitter
+                                a(href="#")
+                                    i.fa.fa-linkedin
+                                a(href="#")
+                                    i.fa.fa-pinterest-p
+                                a(href="#")
+                                    i.fa.fa-vimeo
+                        .contact-form
+                            mixin inputStyle(label, plc, id, type="")
+                                .input-group
+                                    label(for=`${id}`)=label
+                                    if type == 'textarea'
+                                        textarea(placeholder=`${plc}` id=`${id}` rows="10")
+                                    else
+                                        input(type="text" placeholder=`${plc}` id=`${id}`)
+                            .rows
+                                +inputStyle("Name", "Type your name", "inp-name")
+                            .rows
+                                +inputStyle("Phone Number", "Type your phone number", "inp-phone-number")
+                                +inputStyle("Email", "Type your email address", "inp-email")
+                            .rows
+                                +inputStyle("Your Message", "Type your message here", "texta-message", "textarea")
+                            a(href="#").btn.btn-primary.btn-small Send Message
+                            
     script(src="../modules/jquery.min.js")
     script(src="../modules/isotope.pkgd.min.js")
     script(src="../main.js")

@@ -39,6 +39,12 @@ p, a {
   font-size: 1.8rem;
   padding: 16px 55px;
 }
+.btn.btn-small {
+  font-size: 1.4rem;
+  padding: 14px 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
 .btn.btn-primary {
   background: #feb633;
   color: white;
@@ -361,4 +367,163 @@ main section.works .grid-big-h .item {
   width: calc(100% - 30px);
   margin: 0 15px;
   height: 275px;
+}
+main section.experiences {
+  padding: 115px 0 130px;
+  background: #fbfbfb;
+}
+main section.experiences .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.experiences .section-title {
+  margin: 0 auto 35px;
+}
+main section.experiences .section-body .description {
+  width: 60%;
+  margin: 0 auto 94px;
+  text-align: center;
+}
+main section.experiences .section-body .exp-box-container {
+  display: flex;
+}
+main section.experiences .section-body .exp-box-container .exp-box {
+  flex: 1 1 calc(100%/3);
+  padding: 70px 35px;
+  text-decoration: none;
+  background: white;
+  border: 1px solid #efefef;
+  transition: all 0.3s ease;
+  color: #8a8fa3;
+}
+main section.experiences .section-body .exp-box-container .exp-box:hover {
+  background: #feb633;
+  color: #32333c;
+}
+main section.experiences .section-body .exp-box-container .exp-box .job-title {
+  color: #32333c;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+main section.experiences .section-body .exp-box-container .exp-box .company, main section.experiences .section-body .exp-box-container .exp-box .date {
+  font-size: 1.5rem;
+}
+main section.experiences .section-body .exp-box-container .exp-box .company {
+  margin: 0 0 20px 0;
+}
+main section.experiences .section-body .exp-box-container .exp-box .job-desc p {
+  font-size: 1.6rem;
+}
+main section.call-to-action {
+  padding: 115px 0 130px;
+  background: #fbd214;
+}
+main section.call-to-action .container {
+  display: flex;
+  flex-direction: column;
+}
+main section.call-to-action .section-title {
+  margin: 0 auto 50px;
+  color: white;
+  font-size: 5rem;
+}
+main section.call-to-action .section-title::before {
+  bottom: -15px;
+  background: white;
+}
+main section.call-to-action .btn {
+  margin: auto;
+  border: none;
+}
+main section.call-to-action .btn:hover {
+  background: black;
+}
+main section.contact {
+  padding: 115px 0 130px;
+  background: #fbfbfb;
+}
+main section.contact .container {
+  display: flex;
+  flex-direction: column;
+}
+main section.contact .section-title {
+  margin: 0 auto 40px;
+}
+main section.contact .section-body {
+  display: flex;
+}
+main section.contact .section-body .contact-info {
+  flex: 0 0 calc(100%/3);
+  font-size: 1.6rem;
+  color: #8a8fa3;
+}
+main section.contact .section-body .contact-info .info-title {
+  margin: 0 0 35px 0;
+  color: #32333c;
+  font-size: 2rem;
+  font-weight: 500;
+}
+main section.contact .section-body .contact-info .social-media a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #8a8fa3;
+  transition: all 0.3s ease;
+}
+main section.contact .section-body .contact-info .social-media a:hover {
+  color: #feb633;
+}
+main section.contact .section-body .contact-info .social-media a + a {
+  margin: 0 0 0 15px;
+}
+main section.contact .section-body .contact-info .info {
+  margin: 0 0 40px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+main section.contact .section-body .contact-info .info .fa {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 0 15px 0 0;
+}
+main section.contact .section-body .contact-form {
+  flex: 0 0 calc(200%/3);
+}
+main section.contact .section-body .contact-form .rows {
+  display: flex;
+  justify-content: flex-start;
+}
+main section.contact .section-body .contact-form .input-group {
+  flex: 1 1 100%;
+  margin: 0 0 35px;
+}
+main section.contact .section-body .contact-form .input-group + .input-group {
+  padding: 0 0 0 20px;
+}
+main section.contact .section-body .contact-form .input-group label {
+  margin: 0 0 10px;
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #32333c;
+}
+main section.contact .section-body .contact-form .input-group input, main section.contact .section-body .contact-form .input-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  padding: 20px;
+  background: white;
+  border: 1px solid #efefef;
+  color: #8a8fa3;
+  font-size: 1.6rem;
+  box-shadow: 0 5px 0 0px #efefef;
+  transition: all 0.3s ease;
+}
+main section.contact .section-body .contact-form .input-group input:focus, main section.contact .section-body .contact-form .input-group textarea:focus {
+  box-shadow: 0 5px 10px 3px #efefef;
+}
+main section.contact .section-body .contact-form .input-group textarea {
+  font-family: "Poppins", sans-serif;
+  height: 150px;
 }

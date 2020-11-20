@@ -54,6 +54,13 @@ p, a {
         padding: 16px 55px;
     }
 
+    &.btn-small {
+        font-size: 1.4rem;
+        padding: 14px 40px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
     &.btn-primary {
         background: $sub-color;
         color: white;
@@ -459,6 +466,206 @@ main {
                     height: 275px;
                 }
              }
+        }
+
+        &.experiences {
+            padding: 115px 0 130px;
+            background: $bg-section;
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .section-title {
+                margin: 0 auto 35px;
+            }
+
+            .section-body {
+                .description {
+                    width: 60%;
+                    margin: 0 auto 94px;
+                    text-align: center;
+                }
+
+                .exp-box-container {
+                    display: flex;
+
+                    .exp-box {
+                        flex: 1 1 calc(100%/3);
+                        padding: 70px 35px;
+                        text-decoration: none;
+                        background: white;
+                        border: 1px solid #efefef;
+                        transition: all .3s ease;
+                        color: $body-font-color;
+
+                        &:hover {
+                            background: $sub-color;
+                            color: $main-font-color;
+                        }
+
+                        .job-title {
+                            color: $main-font-color;
+                            font-size: 2.2rem;
+                            font-weight: 700;
+                            letter-spacing: 1.2px;
+                        }
+
+                        .company, .date {
+                            font-size: 1.5rem;
+                        }
+
+                        .company {
+                            margin: 0 0 20px 0;
+                        }
+
+                        .job-desc {
+                            p { 
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.call-to-action {
+            padding: 115px 0 130px;
+            background: $main-color;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section-title {
+                margin: 0 auto 50px;
+                color: white;
+                font-size: 5rem;
+
+                &::before {
+                    bottom: -15px;
+                    background: white;
+                }
+            }
+
+            .btn {
+                margin: auto;
+                border: none;
+
+                &:hover {
+                    background: black;
+                }
+            }
+        }
+
+        &.contact {
+            padding: 115px 0 130px;
+            background: $bg-section;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section-title {
+                margin: 0 auto 40px;
+            }
+
+            .section-body {
+                display: flex;
+
+                .contact-info {
+                    flex: 0 0 calc(100%/3);
+                    font-size: 1.6rem;
+                    color: $body-font-color;
+
+                    .info-title {
+                        margin: 0 0 35px 0;
+                        color: $main-font-color;
+                        font-size: 2rem;
+                        font-weight: 500;
+                    }
+
+                    .social-media {
+                        a {
+                            text-decoration: none;
+                            font-size: 1.6rem;
+                            color: $body-font-color;
+                            transition: all .3s ease;
+
+                            &:hover {
+                                color: $sub-color;
+                            }
+
+                            + a {
+                                margin: 0 0 0 15px;
+                            }
+                        }
+                    }
+
+                    .info {
+                        margin: 0 0 40px 0;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: baseline;
+
+                        .fa {
+                            display: inline-block;
+                            font-size: 1.8rem;
+                            margin: 0 15px 0 0;
+                        }
+                    }
+                }
+
+                .contact-form {
+                    flex: 0 0 calc(200%/3);
+
+                    .rows {
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+
+                    .input-group {
+                        flex: 1 1 100%;
+                        margin: 0 0 35px;
+
+                        + .input-group {
+                            padding: 0 0 0 20px;
+                        }
+
+                        label {
+                            margin: 0 0 10px;
+                            display: block;
+                            font-size: 1.5rem;
+                            text-transform: uppercase;
+                            color: $main-font-color;
+                        }
+                        input, textarea {
+                            width: 100%;
+                            box-sizing: border-box;
+                            outline: none;
+                            padding: 20px;
+                            background: white;
+                            border: 1px solid #efefef;
+                            color: $body-font-color;
+                            font-size: 1.6rem;
+                            box-shadow: 0 5px 0 0px #efefef;
+                            transition: all .3s ease;
+
+                            &:focus {
+                                box-shadow: 0 5px 10px 3px #efefef
+                            }
+                        }
+
+                        textarea {
+                            font-family: 'Poppins', sans-serif;
+                            height: 150px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
