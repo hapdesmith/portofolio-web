@@ -228,7 +228,7 @@ main section.services .box-container .box::before {
   bottom: 0;
   z-index: 1;
   background-image: -webkit-linear-gradient(-48deg, #24e2fe 0%, #24b0fe 54%, #237efd 100%);
-  opacity: 0.5;
+  opacity: 0.85;
 }
 main section.services .box-container .box .text-container {
   position: relative;
