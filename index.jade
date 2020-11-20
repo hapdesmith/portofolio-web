@@ -65,21 +65,26 @@ html
                             a(href="#" data-filter=".fe") Frontend Dev
                             a(href="#" data-filter=".ph") Photography
 
-                        mixin gridStyle(imageName, workType, sizeType = '')
+                        mixin gridStyle(title, imageName, workType, sizeType = '')
                             .grid-item(class=`${workType.join(" ")} ${sizeType}`)
                                 .item
                                     img(src=`../images/${imageName}.jpg`)
+                                a(href="#").info
+                                    i.fa.fa-search
+                                    h2=title.toUpperCase()
+                                    span=workType.join(" , ").toUpperCase()
+                                    
 
                         .grid
                             .grid-sizer
-                            +gridStyle('work-a', ['uix', 'fe'], 'grid-big')
-                            +gridStyle('work-c', ['uix', 'ph'])
-                            +gridStyle('work-d', ['uix', 'fe', 'ph'])
-                            +gridStyle('work-e', ['fe'])
-                            +gridStyle('work-f', ['uix'])
-                            +gridStyle('work-g', ['uix'])
-                            +gridStyle('work-h', ['ph', 'fe'])
-                            +gridStyle('work-b', ['ph'], 'grid-big-h')
+                            +gridStyle('judul work a','work-a', ['uix', 'fe'], 'grid-big')
+                            +gridStyle('judul work c','work-c', ['uix', 'ph'])
+                            +gridStyle('judul work d','work-d', ['uix', 'fe', 'ph'])
+                            +gridStyle('judul work e','work-e', ['fe'])
+                            +gridStyle('judul work f','work-f', ['uix'])
+                            +gridStyle('judul work g','work-g', ['uix'])
+                            +gridStyle('judul work h','work-h', ['ph', 'fe'])
+                            +gridStyle('judul work i','work-b', ['ph'], 'grid-big-h')
     script(src="../modules/jquery.min.js")
     script(src="../modules/isotope.pkgd.min.js")
     script(src="../main.js")
