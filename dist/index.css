@@ -110,10 +110,10 @@ header nav a::before {
   background: #feb633;
   transition: all 0.3s ease;
 }
-header nav a:hover, header nav a.active, header nav a.home {
+header nav a:hover, header nav a.active {
   color: #feb633;
 }
-header nav a:hover::before, header nav a.active::before, header nav a.home::before {
+header nav a:hover::before, header nav a.active::before {
   width: 50%;
 }
 

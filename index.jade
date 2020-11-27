@@ -10,11 +10,11 @@ html
             .container
                 a(href="#").logo H.
                 nav
-                    - var navi = ["Home", "About Us", "Services", "Portofolio", "Contact", "Blog"]
+                    - var navi = ["Home", "About", "Services", "Portofolio", "Contact", "Blog"]
                         each item in navi
-                            a(href="#" class=`${item.toLowerCase()}`)= item
+                            a(href=`#${item.toLowerCase()}` class=`${item.toLowerCase()}`)= item === "About" ? "About Us" : item
         main
-            section.hero
+            section#home.hero
                 .container
                     .hero-text-container
                         h1.title Saya Hapdesmith
@@ -22,7 +22,7 @@ html
                         a(href="#").btn.btn-primary Hire Me
                     .hero-image
                         img(src="../images/hero_img.png" alt="hapdmesith hero image")
-            section.about
+            section#about.about
                 .container
                     h2.section-title.left About Me
                     .section-body
@@ -31,7 +31,7 @@ html
                             p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.
                         a(href="#").btn.btn-medium.btn-primary View Works
                         a(href="#").btn.btn-medium.btn-o-primary Download CV
-            section.services
+            section#services.services
                 .container
                     h2.section-title Services
                     .section-body
@@ -53,7 +53,7 @@ html
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit 3
                             +boxStyle('green', 'gamepad', 'WEB DESIGN')
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit 4
-            section.works
+            section#portofolio.works
                 .container
                     h2.section-title Latest Work
                     .section-body
@@ -109,7 +109,7 @@ html
                 .container
                     h2.section-title Have Any Project in Mind ?
                     a(href="#").btn.btn-o-primary Hire Me
-            section.contact
+            section#contact.contact
                 .container
                     h2.section-title Contact Me
                     .section-body

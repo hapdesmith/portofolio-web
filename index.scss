@@ -133,7 +133,7 @@ header {
                 transition: all .3s ease;
             }
 
-            &:hover, &.active, &.home {
+            &:hover, &.active {
                 color:$sub-color;
 
                 &::before {
