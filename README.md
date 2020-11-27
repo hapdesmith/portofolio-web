@@ -8,7 +8,7 @@ Checkout ke branch di bawah ini untuk mengikuti tutorial dan melihat hasil akhir
 3. Branch `episode-3-start` : Kondisi awal episode 3
 4. Branch `episode-3-end` : Kondisi akhir epsiode 3
 5. Branch `episode-4-start` : Kondisi awal episode 4
-6. Branch `episode-4-end` : Kondisi akhir epsiode 5
+6. Branch `episode-4-end` : Kondisi akhir epsiode 4
 
 Website yang kita jadikan study kasus : https://droitthemes.com/wp/mak/
 
