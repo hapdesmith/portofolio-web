@@ -11,6 +11,16 @@ $body-font-color: #8a8fa3;
 $bg-section: #fbfbfb;
 $bg-header: #fff;
 
+// mixins
+@mixin logo {
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: $main-color;
+    text-decoration: none;
+}
+
+
 html, body {
     padding: 0;
     margin: 0;
@@ -91,7 +101,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 999;
     display: flex;
     align-items: center;
     box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.2);
@@ -102,11 +112,7 @@ header {
     }
 
     .logo {
-        font-size: 4.5rem;
-        font-weight: 700;
-        line-height: 1;
-        color: $main-color;
-        text-decoration: none;
+        @include logo;
     }
 
     nav {
@@ -116,6 +122,7 @@ header {
         a {
             color: $main-font-color;
             font-size: 1.4rem;
+            font-weight: 600;
             text-decoration: none;
             margin: 0 0 0 42px;
             transition: all .3s ease;
@@ -669,3 +676,75 @@ main {
         }
     }
 }
+
+footer {
+    background: #f6f8fc;
+    padding: 65px 0 20px;
+
+    .footer-logo {
+        @include logo;
+        margin: 0 0 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-description  {
+        width: 600px;
+        text-align: center;
+        margin: 0 auto 40px;
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: $body-font-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-sosmed {
+        padding: 0 0 58px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            margin: 0 5px 0 0;
+            width: 40px;
+            height: 40px;
+            font-size: 1.8rem;
+            text-decoration: none;
+            transition: all .3s ease;
+            background: #dce2ed;
+            color:#707b90;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                color: white;
+                background: $main-color;
+            }
+        }
+    }
+
+    .footer-copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 0;
+        font-size: 1.5rem;
+        font-weight: 300;
+
+        a {
+            text-decoration: none;
+            color: $main-color;
+            font-size: inherit;
+            font-weight: inherit;
+            margin: 0 0 0 5px;
+        }
+    }
+}
+
+@import 'responsive';

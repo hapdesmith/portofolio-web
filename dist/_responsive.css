@@ -1,0 +1,109 @@
+@media screen and (max-width: 1025px) {
+  .container {
+    padding: 0 40px;
+    width: 100%;
+  }
+
+  .btn.btn-medium {
+    font-size: 1.6rem;
+    padding: 14px 35px;
+  }
+
+  main section.hero .hero-text-container .title {
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 55px;
+  }
+  main section.hero .hero-text-container .description {
+    font-size: 3rem;
+    line-height: 35px;
+    font-weight: 400;
+  }
+  main section.works .grid-item, main section.works .grid-sizer {
+    width: 50%;
+  }
+  main section.works .grid-item .item {
+    height: auto;
+  }
+  main section.works .grid-item .item img {
+    width: 100%;
+    height: auto;
+  }
+  main section.works .grid-big .item {
+    height: auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .btn {
+    padding: 16px 60px;
+  }
+  .btn.btn-medium {
+    padding: 14px 50px;
+  }
+  .btn.btn-small {
+    padding: 12px 30px;
+  }
+
+  main section .section-title {
+    font-size: 4rem;
+  }
+  main section.hero .hero-text-container {
+    width: 50%;
+  }
+  main section.hero .hero-text-container .title {
+    font-size: 4.5rem;
+    margin: 0 0 20px;
+  }
+  main section.hero .hero-text-container .description {
+    font-size: 2.6rem;
+    line-height: 30px;
+    margin: 0 0 30px;
+  }
+  main section.hero .hero-image {
+    width: 50%;
+  }
+  main section.about .container {
+    flex-wrap: wrap;
+  }
+  main section.about .section-title, main section.about .section-body {
+    flex: 0 0 100%;
+  }
+  main section.about .section-title {
+    margin: 0 0 50px;
+    text-align: center;
+  }
+  main section.about .section-title.left::before {
+    left: calc(50% - 50px);
+  }
+  main section.services .section-body .description {
+    width: 100%;
+  }
+  main section.services .box-container .box {
+    padding: 30px;
+  }
+  main section.services .box-container .box .fa {
+    font-size: 6rem;
+  }
+  main section.works .section-body .description {
+    width: 100%;
+  }
+  main section.experiences .section-body .description {
+    width: 100%;
+  }
+  main section.experiences .section-body .exp-box-container .exp-box {
+    padding: 40px 25px;
+  }
+  main section.call-to-action .section-title {
+    font-size: 4rem;
+  }
+  main section.contact .section-body .contact-info {
+    flex: 0 0 40%;
+  }
+  main section.contact .section-body .contact-form {
+    flex: 0 0 60%;
+  }
+}

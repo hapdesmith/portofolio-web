@@ -1,6 +1,12 @@
 doctype html
 html
     head
+        meta(charset="UTF-8")
+        title Website Portofolio
+        meta(name="description" content="Website Portofolio Tutorial")
+        meta(name="keywords" content="HTML, CSS, JavaScript, SCSS, Jquery, SASS, Pug, Jade")
+        meta(name="author" content="Hapdesmith")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
         link(href="./index.css" rel="stylesheet")
         link(href="../modules/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet")
         link(rel="preconnect" href="https://fonts.gstatic.com")
@@ -156,8 +162,20 @@ html
                                 +inputStyle("Email", "Type your email address", "inp-email")
                             .rows
                                 +inputStyle("Your Message", "Type your message here", "texta-message", "textarea")
-                            a(href="#").btn.btn-primary.btn-small Send Message
-                            
+                            a(href="#").btn.btn-primary.btn-small Send Message         
+        footer
+            .container
+                .footer-logo H.
+                .footer-description
+                    | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .footer-sosmed
+                    - var sosmed = ['facebook', 'twitter', 'linkedin', 'dribbble', 'behance', 'google-plus']
+                        each item in sosmed
+                            a(href="#")
+                                i(class=`fa fa-${item}`)
+                .footer-copyright
+                    | Copyright © 2018 
+                    a(href="#") DroitThemes
     script(src="../modules/jquery.min.js")
     script(src="../modules/isotope.pkgd.min.js")
     script(src="../main.js")

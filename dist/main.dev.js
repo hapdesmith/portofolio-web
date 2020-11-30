@@ -47,11 +47,12 @@ $(function () {
         var isHit = destList.filter(function (e) {
           var temp = false; // console.log(`${e.navi} : ${e.offest - scrollPos}`);
           // 88 -> 38 < area yg ke hit < 238
-          // ALTERNATIVE 1
+          // ALTERNATIVE 1, kurang oke
           // temp = e.offest - scrollPos >= -1*TOLERANCE && e.offest - scrollPos <= TOLERANCE + 100
-          // ALKTERNATIVE 2, lebih mudah di pahami. 
+          // ALKTERNATIVE 2, lebih mudah di pahami dan presisi 
+          // if (e.offest - TOLERANCE - 80 <= scrollPos && scrollPos <= e.offest + TOLERANCE + 350) console.log(`${e.offest - TOLERANCE - 80} < ${scrollPos} < ${e.offest + TOLERANCE + 350} = ${e.navi}`);
 
-          temp = e.offest - TOLERANCE <= scrollPos && scrollPos <= e.offest + TOLERANCE;
+          temp = e.offest - TOLERANCE - 80 <= scrollPos && scrollPos <= e.offest + TOLERANCE + 350;
           return temp;
         }); // console.log(scrollPos, isHit);
         // klo ada yang terhit, kita reset class active di navi

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <title>Website Portofolio</title>
+    <meta name="description" content="Website Portofolio Tutorial">
+    <meta name="keywords" content="HTML, CSS, JavaScript, SCSS, Jquery, SASS, Pug, Jade">
+    <meta name="author" content="Hapdesmith">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./index.css" rel="stylesheet">
     <link href="../modules/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -8,33 +14,33 @@
   </head>
   <body>
     <header>
-      <div class="container"><a href="#" class="logo">H.</a>
-        <nav><a href="#home" class="home">Home</a><a href="#about" class="about">About Us</a><a href="#services" class="services">Services</a><a href="#portofolio" class="portofolio">Portofolio</a><a href="#contact" class="contact">Contact</a><a href="#blog" class="blog">Blog</a>
+      <div class="container"><a class="logo" href="#">H.</a>
+        <nav><a class="home" href="#home">Home</a><a class="about" href="#about">About Us</a><a class="services" href="#services">Services</a><a class="portofolio" href="#portofolio">Portofolio</a><a class="contact" href="#contact">Contact</a><a class="blog" href="#blog">Blog</a>
         </nav>
       </div>
     </header>
     <main>
-      <section id="home" class="hero">
+      <section class="hero" id="home">
         <div class="container">
           <div class="hero-text-container">
             <h1 class="title">Saya Hapdesmith</h1>
-            <p class="description">Saya adalah gamer dan programmer</p><a href="#" class="btn btn-primary">Hire Me</a>
+            <p class="description">Saya adalah gamer dan programmer</p><a class="btn btn-primary" href="#">Hire Me</a>
           </div>
           <div class="hero-image"><img src="../images/hero_img.png" alt="hapdmesith hero image"></div>
         </div>
       </section>
-      <section id="about" class="about">
+      <section class="about" id="about">
         <div class="container">
           <h2 class="section-title left">About Me</h2>
           <div class="section-body">
             <div class="description">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.</p>
-            </div><a href="#" class="btn btn-medium btn-primary">View Works</a><a href="#" class="btn btn-medium btn-o-primary">Download CV</a>
+            </div><a class="btn btn-medium btn-primary" href="#">View Works</a><a class="btn btn-medium btn-o-primary" href="#">Download CV</a>
           </div>
         </div>
       </section>
-      <section id="services" class="services">
+      <section class="services" id="services">
         <div class="container">
           <h2 class="section-title">Services</h2>
           <div class="section-body">
@@ -78,46 +84,46 @@
           </div>
         </div>
       </section>
-      <section id="portofolio" class="works">
+      <section class="works" id="portofolio">
         <div class="container">
           <h2 class="section-title">Latest Work</h2>
           <div class="section-body">
             <div class="description">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="filter-box"><a href="#" data-filter="*" class="is-selected">All</a><a href="#" data-filter=".uix">UI / UX</a><a href="#" data-filter=".fe">Frontend Dev</a><a href="#" data-filter=".ph">Photography</a></div>
+            <div class="filter-box"><a class="is-selected" href="#" data-filter="*">All</a><a href="#" data-filter=".uix">UI / UX</a><a href="#" data-filter=".fe">Frontend Dev</a><a href="#" data-filter=".ph">Photography</a></div>
             <div class="grid">
               <div class="grid-sizer"></div>
                           <div class="grid-item uix fe grid-big">
-                            <div class="item"><img src="../images/work-a.jpg"></div><a href="#" class="info"><i class="fa fa-search"></i>
+                            <div class="item"><img src="../images/work-a.jpg"></div><a class="info" href="#"><i class="fa fa-search"></i>
                               <h2>JUDUL WORK A</h2><span>UIX , FE</span></a>
                           </div>
                           <div class="grid-item uix ph ">
-                            <div class="item"><img src="../images/work-c.jpg"></div><a href="#" class="info"><i class="fa fa-search"></i>
+                            <div class="item"><img src="../images/work-c.jpg"></div><a class="info" href="#"><i class="fa fa-search"></i>
                               <h2>JUDUL WORK C</h2><span>UIX , PH</span></a>
                           </div>
                           <div class="grid-item uix fe ph ">
-                            <div class="item"><img src="../images/work-d.jpg"></div><a href="#" class="info"><i class="fa fa-search"></i>
+                            <div class="item"><img src="../images/work-d.jpg"></div><a class="info" href="#"><i class="fa fa-search"></i>
                               <h2>JUDUL WORK D</h2><span>UIX , FE , PH</span></a>
                           </div>
                           <div class="grid-item fe ">
-                            <div class="item"><img src="../images/work-e.jpg"></div><a href="#" class="info"><i class="fa fa-search"></i>
+                            <div class="item"><img src="../images/work-e.jpg"></div><a class="info" href="#"><i class="fa fa-search"></i>
                               <h2>JUDUL WORK E</h2><span>FE</span></a>
                           </div>
                           <div class="grid-item uix ">
-                            <div class="item"><img src="../images/work-f.jpg"></div><a href="#" class="info"><i class="fa fa-search"></i>
+                            <div class="item"><img src="../images/work-f.jpg"></div><a class="info" href="#"><i class="fa fa-search"></i>
                               <h2>JUDUL WORK F</h2><span>UIX</span></a>
                           </div>
                           <div class="grid-item uix ">
-                            <div class="item"><img src="../images/work-g.jpg"></div><a href="#" class="info"><i class="fa fa-search"></i>
+                            <div class="item"><img src="../images/work-g.jpg"></div><a class="info" href="#"><i class="fa fa-search"></i>
                               <h2>JUDUL WORK G</h2><span>UIX</span></a>
                           </div>
                           <div class="grid-item ph fe ">
-                            <div class="item"><img src="../images/work-h.jpg"></div><a href="#" class="info"><i class="fa fa-search"></i>
+                            <div class="item"><img src="../images/work-h.jpg"></div><a class="info" href="#"><i class="fa fa-search"></i>
                               <h2>JUDUL WORK H</h2><span>PH , FE</span></a>
                           </div>
                           <div class="grid-item ph grid-big-h">
-                            <div class="item"><img src="../images/work-b.jpg"></div><a href="#" class="info"><i class="fa fa-search"></i>
+                            <div class="item"><img src="../images/work-b.jpg"></div><a class="info" href="#"><i class="fa fa-search"></i>
                               <h2>JUDUL WORK I</h2><span>PH</span></a>
                           </div>
             </div>
@@ -131,19 +137,19 @@
             <div class="description">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="exp-box-container"><a href="#" class="exp-box">
+            <div class="exp-box-container"><a class="exp-box" href="#">
                               <div class="date">June 2019 - Des 2019</div>
                               <div class="job-title">UI/UX Designer</div>
                               <div class="company">Google</div>
                               <div class="job-desc">
                                 <p>Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore.</p>
-                              </div></a><a href="#" class="exp-box">
+                              </div></a><a class="exp-box" href="#">
                               <div class="date">Jan 2020 - June 2020</div>
                               <div class="job-title">UI/UX Designer</div>
                               <div class="company">Youtube</div>
                               <div class="job-desc">
                                 <p>Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore.</p>
-                              </div></a><a href="#" class="exp-box">
+                              </div></a><a class="exp-box" href="#">
                               <div class="date">July 2020 - Des 2020</div>
                               <div class="job-title">UI/UX Designer</div>
                               <div class="company">Facebook</div>
@@ -156,10 +162,10 @@
       </section>
       <section class="call-to-action">
         <div class="container">
-          <h2 class="section-title">Have Any Project in Mind ?</h2><a href="#" class="btn btn-o-primary">Hire Me</a>
+          <h2 class="section-title">Have Any Project in Mind ?</h2><a class="btn btn-o-primary" href="#">Hire Me</a>
         </div>
       </section>
-      <section id="contact" class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <h2 class="section-title">Contact Me</h2>
           <div class="section-body">
@@ -168,8 +174,7 @@
               <div class="info"><i class="fa fa-map-marker"></i><span>Los Angeles, Belok kanan dikit</span></div>
               <div class="info"><i class="fa fa-envelope"></i><span>emailku@hapdesmith.com</span></div>
               <div class="info"><i class="fa fa-phone"></i><span>
-                   
-                  +081232323 <br/>
+                   +081232323 <br/>
                   +081232323</span></div>
               <div class="info"><i class="fa fa-globe"></i><span>www.hapdesmith.com</span></div>
               <div class="info-title">Follow Me</div>
@@ -197,12 +202,21 @@
                                 <label for="texta-message">Your Message</label>
                                 <textarea placeholder="Type your message here" id="texta-message" rows="10"></textarea>
                               </div>
-              </div><a href="#" class="btn btn-primary btn-small">Send Message</a>
+              </div><a class="btn btn-primary btn-small" href="#">Send Message         </a>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="container">
+        <div class="footer-logo">H.</div>
+        <div class="footer-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class="footer-sosmed"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-behance"></i></a><a href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <div class="footer-copyright">Copyright © 2018 <a href="#">DroitThemes</a></div>
+      </div>
+    </footer>
   </body>
   <script src="../modules/jquery.min.js"></script>
   <script src="../modules/isotope.pkgd.min.js"></script>
